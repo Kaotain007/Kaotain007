@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.scene {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.text {
+    font-size: 2em;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.character {
+    font-size: 5em;
+    opacity: 0;
+    transition: opacity 1s;
+    margin: 20px 0;
+}
+
+#message1, #character, #message2, #message3, #sorry, #happyCharacter {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#message1 {
+    animation: fadeIn 2s forwards;
+}
+
+#character {
+    animation: fadeIn 2s 2s forwards;
+}
+
+#message2 {
+    animation: fadeIn 2s 4s forwards;
+}
+
+#message3 {
+    animation: fadeIn 2s 6s forwards;
+}
+
+#sorry {
+    animation: fadeIn 2s 8s forwards;
+}
+
+#happyCharacter {
+    animation: fadeIn 2s 10s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
